@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="content">
+        <section class="container-calc">
+          <h1 class="title">Calculator</h1>
+          <div class="display">
+            <div id="display-total">
+              <input type="number" name="input" id="input" />
+              <span></span>
+            </div>
+            <div id="details">
+              <span></span>
+            </div>
+          </div>
+          <div class="div-input">
+            <button class="operator" id="operatorOne" type="button">+</button>
+            <button class="operator" id="operatorTwo" type="button">-</button>
+            <button class="operator" id="operatorFour" type="button">/</button>
+            <button class="operator" id="operatorThree" type="button">x</button>
+          </div>
+          <section class="buttons">
+            <div id="content-button-one">
+              <button id="btn-clear" onclick="clearDetails()">C</button>
+              <button id="btn-enter" onclick="enter()">Enter</button>
+              <button id="btn-reset" onclick="reset()">R</button>
+            </div>
+            <div id="content-button-two">
+              <button id="btn-equals" onclick="equals()">=</button>
+              <button id="btn-historic" onclick="list()">Historic</button>
+            </div>
+          </section>
+        </section>
+        <section>
+          <div id="historic-container">
+            <span></span>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
